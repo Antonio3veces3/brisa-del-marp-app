@@ -2,21 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +10,48 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.nav {
+  @apply w-full max-h-20 flex justify-start items-center px-14 py-14 space-x-14;
+}
+.nav_title {
+  @apply font-semibold text-2xl hover:text-blue-800;
+}
+
+.bg_welcome_container {
+  @apply flex justify-center w-full xl:h-[700px] ;
+}
+
+.bg_welcome_image {
+  @apply relative xl:w-[100%] w-full xl:h-full z-0 bg-white;
+}
+
+.category_card_item {
+  @apply flex text-xl mt-1 h-10 bg-gray-100 font-normal rounded-md justify-center items-center hover:bg-brown-10;
+}
+
+.footer {
+  @apply w-full h-[300px] px-52;
+}
+
+.border_line {
+  @apply border-2 border-red-700
+}
+
+.subtitle_about{
+  @apply text-3xl font-bold flex flex-row gap-3 text-red-10 items-center
+}
+
+.description_about{
+  @apply text-lg font-medium
+}
+
+.link {
+  @apply text-blue-600 font-normal italic underline
 }
