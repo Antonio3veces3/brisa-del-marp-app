@@ -25,11 +25,11 @@
 }
 
 .bg_welcome_container {
-  @apply flex justify-center w-full xl:h-[700px] ;
+  @apply flex justify-center w-full xl:h-[700px] flex-row;
 }
 
 .bg_welcome_image {
-  @apply relative xl:w-[100%] w-full xl:h-full z-0 bg-white;
+  @apply relative xl:h-full z-0 inset-x-0 bottom-0;
 }
 
 .category_card_item {
@@ -49,7 +49,7 @@
 }
 
 .description_about{
-  @apply text-lg font-medium
+  @apply text-lg font-medium text-center
 }
 
 .link {

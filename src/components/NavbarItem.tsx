@@ -17,7 +17,7 @@ function NavbarItem({href, title, isActive, setIsActive} : NavbarItemProps) {
     <>
       <Link href={href} 
         className={`nav_title ${
-          (isActive) ? 'text-red-10' : 'text-black'
+          (isActive) ? 'text-red-10 underline' : 'text-black'
         }`}
         onClick={onPress}
       >

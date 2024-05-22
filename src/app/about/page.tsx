@@ -6,8 +6,8 @@ import {FaMapPin, FaRegClock, FaPhoneAlt, FaExternalLinkAlt} from 'react-icons/f
 function About() {
   return (
     <div className='w-full h-screen flex flex-row '>
-      <div className='w-[50%] p-36 '>
-        <div className='w-full h-[100%] bg-gray-10 rounded-lg flex flex-col items-center justify-center shadow-lg '>
+      <div className='w-[50%] flex items-center justify-center'>
+        <div className='w-[70%] h-[70%] bg-gray-10 rounded-lg flex flex-col items-center justify-center shadow-lg'>
           <p className='subtitle_about'>
             <FaMapPin size={20 }/> 
             Dirección:
